@@ -137,7 +137,6 @@ async function main() {
       )
     )
   }
-  console.log()
 }
 
 function updateVersions(version) {

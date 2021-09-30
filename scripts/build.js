@@ -109,7 +109,6 @@ async function build(target) {
   )
 
   if (buildTypes && pkg.types) {
-    console.log()
     console.log(
       chalk.bold(chalk.yellow(`Rolling up type definitions for ${target}...`))
     )
@@ -158,11 +157,9 @@ function checkAllSizes(targets) {
   if (devOnly || (formats && !formats.includes('global'))) {
     return
   }
-  console.log()
   for (const target of targets) {
     checkSize(target)
   }
-  console.log()
 }
 
 function checkSize(target) {
